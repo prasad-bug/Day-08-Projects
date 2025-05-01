@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Masking</title>
+  <link rel="stylesheet" href="problem4.css">
+</head>
+<style>
+    body {
+    background: #1e1e1e;
+    color: white;
+    font-family: sans-serif;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  img {
+    max-width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(33, 24, 24, 0.5);
+  }
+  
+  .masked {
+    mask-image: linear-gradient(to bottom, rgb(121, 39, 39), transparent);
+    mask-size: cover;
+
+  }
+  
+</style>
+<body>
+    <h1><code>Masking Of an image</code></h1>
+  <div class="image-row">
+    <img src="https://imgs.search.brave.com/spZOxSsosiHY3ll3TMfSaEvSXSPkIvpyMg-0_jjGhM4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzAwLzQyLzAy/LzM2MF9GXzMwMDQy/MDI1MV9BckpYNlpk/Z2V2bmdmR3VYS2pB/QW1ONVpVejNDNWF6/Ni5qcGc" alt="Original" class="original">
+    <img src="https://imgs.search.brave.com/spZOxSsosiHY3ll3TMfSaEvSXSPkIvpyMg-0_jjGhM4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzAwLzQyLzAy/LzM2MF9GXzMwMDQy/MDI1MV9BckpYNlpk/Z2V2bmdmR3VYS2pB/QW1ONVpVejNDNWF6/Ni5qcGc" alt="Masked" class="masked">
+  </div>
+</body>
+</html>
